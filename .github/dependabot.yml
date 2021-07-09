@@ -1,0 +1,14 @@
+version: 2
+registries:
+  cloudsmith-cargo-basic:
+    type: git
+    url: https://dl.cloudsmith.io
+    username: ciara-carey
+    password: ${{secrets.CS_PASSWORD}}
+updates:
+  - package-ecosystem: "cargo"
+    directory: "/"
+    registries:
+      - cloudsmith-cargo-basic
+    schedule:
+      interval: "daily"
