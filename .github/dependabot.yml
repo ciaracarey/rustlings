@@ -12,3 +12,4 @@ updates:
       - cloudsmith-cargo-basic
     schedule:
       interval: "daily"
+      time:13:30
