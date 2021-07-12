@@ -14,6 +14,9 @@ regex = "1.1.6"
 serde = {version = "1.0.10", features = ["derive"]}
 my-crate = { version = "0.1.0", registry = "cloudsmith-test-ciara-repo1" }
 
+[registries.cloudsmith-test-ciara-repo1]
+index = "https://dl.cloudsmith.xyz/JUpHuiMbgQ0njQGh/ciara-repo1/cargo/index.git"
+
 [[bin]]
 name = "rustlings"
 path = "src/main.rs"
